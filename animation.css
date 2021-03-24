@@ -1,0 +1,36 @@
+div {
+  -o-animation-name: carre;
+  animation-duration: 1s;    animation-fill-mode:
+  forwards; 
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}/*Amination mymove : forwards le garde sur sa position finale.Reverse inverser l sens ou alternate pour alterner le sens. Chiffre 2 pour que ca se lance 2 fois.*/
+@keyframes mymove {
+    from {left: 0px;} /* 0% */
+    to {left: 200px;} /* 100% */
+}
+div:hover{
+  animation-play-state: paused;
+}/*Met en pause l'animation au survol de la souris*/
+
+@keyframes carre{
+  0%{
+    left: 0px;
+    top: 0px;
+  }
+  25%{
+    top:0px;
+    left: 200px;
+  }
+  50%{
+    top:200px;
+    left: 200px;
+  }
+  75%{
+    top:200px
+    left:
+  100%{
+    top: 0px;
+    left: 0px;
+  }
+}
